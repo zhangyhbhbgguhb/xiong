@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+
+}
+
+.bg{
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	top: 0;
+	left: 0;
+top: 180px;
+	z-index: 999;
+	animation: bgpic1 steps(8) 1s infinite;
+
+
+}
+
+
+
+.bgs{
+	
+	height: 400px;
+	width: 100%;
+		animation: bgpic2 steps(8) 1s infinite;
+	}
+
+
+
+
+
+
+.bear{
+	position: absolute;
+	top: 400px;
+	z-index: 1000;
+	top: 50%;
+	overflow: hidden;
+	margin-top: -50px;
+	margin-left: -100px;
+	height: 100px;
+	width: 200px;
+	left: 50%;
+/*	animation: move  5s linear infinite;*/
+
+animation: bear steps(8) 0.001s infinite;
+
+background: url(../img/bear.png);
+}
+
+
+
+ @keyframes bear {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes move {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 50%;
+                transform: translateX(-50%)
+            }
+        }
+ @keyframes bgpic2 {
+            0%{
+                transform: translate(0)
+            }
+            100%{
+                transform: translate(-50%)
+            }
+        }
+        @keyframes bgpic1 {
+            0%{
+                transform: translate(0)
+            }
+            100%{
+                transform: translate(-50%)
+            }
+        }
